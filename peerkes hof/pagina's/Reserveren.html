@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>B&B Peerkes Hof</title>
+        <link rel="stylesheet" href="../css/peerkeshof.css" type="text/css">
+        <link rel="stylesheet" href="../css/menu.css" type="text/css">
+        <meta charset="UTF-8">
+    </head>
+    <body class= "body"></body>
+        <header class="header">
+            <h1 class = "title">Peerkes Hof</h1>
+            <h4 class = "centertext">Een historische boerderij tussen de bomen</h4>
+        </header>
+        <section>
+            <nav>
+                <ul id="ulmenu">
+                    <li><a class="amenu" href="PeerkesHof.html">Home</a></li>
+                    <li><a class="amenu" href="HetVerhaal.html">Het verhaal</a></li>
+                    <li><a class="amenu" href="fotos.html">Foto's</a></li>
+                    <li><a class="amenu" style= "color: grey" href="Reserveren.html">Reserveren</a></li>
+                    <li><a class="amenu" href="contact.html">Contact</a></li>
+                    <li><a class="amenu" href="ledenlijst.php">Ledenlijst</a></li>
+                </ul>
+            </nav>
+            <article>
+                    <h1 class="title">Reserveren</h1>
+                        <label>Reserveren kunt u telefonisch doen op 06-33684817</label><br>
+            </article>
+        </section>
+        <div class="left">
+            <h2>Inloggen</h2>
+            <form action="controle.php" method="POST">
+                <scrum>Emailadres: </scrum><br>
+                <input type="text" id="email" name="email" required><br>
+                <scrum>Wachtwoord:</scrum><br>
+                <input type="password" id="password" name="password" required><br>
+                <br>
+                <input type="submit" id="btlogin" name="btlogin" value="Inloggen">
+            </form>
+        </div>
+        <div class="right">
+            <h2>Aanmelden</h2>
+            <form action="invoer.php" method="POST">
+                <scrum>Emailadres: </scrum><br>
+                <input type="email" id="emailadres" name="emailadres" required><br>
+                <scrum>Wachtwoord: </scrum><br>
+                <input type="password" id="password" name="password" required><br>
+                <scrum>Wachtwoord (herhaal): </scrum><br>
+                <input type="password" id="password2" name="password2" required><br>
+                <scrum>Naam: </scrum><br>
+                <input type="text" id="name" name="name" required><br>
+                <scrum>Geslacht: </scrum><br>
+                <input type="radio" id="gender" name="gender" value="man"> Man<br>
+                <input type="radio" id="gender" name="gender" value="vrouw"> Vrouw<br>
+                <scrum>Adres: </scrum><br>
+                <input type="adres" id="adres" name="adres" required><br>
+                <scrum>Postcode: </scrum><br>
+                <input type="text" id="postcode" name="postcode" required><br>
+                <scrum>Woonplaats: </scrum><br>
+                <input type="text" id="woonplaats" name="woonplaats" required><br>
+                <scrum>Geboortedatum: </scrum><br> 
+                <input type="date" id="geboortedatum" name="geboortedatum" required><br>   
+                <br>
+                <input type="submit" id="btaanmelden" name="btaanmelden" value="Aanmelden">          
+            </form>
+        </div>
+    </body>
+</html>
